@@ -158,6 +158,23 @@ h2 {
     margin-bottom: 1rem;
 }
 
+h4 {
+  font-family: 'Bree', sans-serif;
+  font-weight: 600;
+  font-size: 20px; /* mobile */
+  color: #CE0058 !important;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+
+
+
 p {
   color: #252A2D;
   font-size: 16px;
@@ -197,6 +214,34 @@ p {
   line-height: 36px;
 }
 
+.text-sub-q-1 {
+  color: #252A2D;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.text-subprogress {
+  color: #847770;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+@media (min-width: 576px) {
+  .text-sub-q-1 {
+    margin-bottom: 58px; 
+    font-size: 18px;
+  }
+}
+
+
 .text-center-left-mobile {
   text-align: left; 
 }
@@ -214,12 +259,11 @@ p {
 
 
 .cb-orimary-btn-pink {
-  width: 280px;
+  width: 100%;
   height: 56px;
   flex-shrink: 0;
   background-color: #CE0058;
   border-radius: 28px;
-  background:#CE0058;
   color: #fff;
   border: none;
   font-size: 16px;
@@ -230,11 +274,23 @@ p {
   transition: background-color 0.3s ease;
 }
 
+@media (min-width: 576px) {
+  .cb-orimary-btn-pink {
+    width: 280px;
+  }
+} 
+
 .cb-orimary-btn-pink:hover {
   background-color: #960048;
   color: #fff;
-  /* asegúrate que sigue siendo blanco en hover */
 }
+
+.cb-orimary-btn-pink:disabled {
+  background-color: #CACCCE;
+  color: #847770;
+  cursor: not-allowed;
+}
+
 
 .ps-24 {
   padding-left: 48px;
@@ -306,3 +362,85 @@ p {
     margin-bottom: 0;
   }
 }
+
+
+.card-option {
+  width: 100%;
+  height: 88px;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding: 0 16px;
+  transition: border 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.card-option:hover {
+  border: 1px solid #960048;
+}
+
+.opcion-card input[type="radio"]:checked + .card-option {
+  border: 2px solid #CE0058;
+}
+
+
+/* Responsive */
+@media (max-width: 767.98px) {
+  .card-option {
+    width: 100%;
+  }
+}
+
+.text-rosa {
+  color: #CE0058;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.p-r24 {
+  padding-right: 16px;
+}
+
+/* Mobile: botón fijo como bottom nav */
+@media (max-width: 767.98px) {
+  .btn-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    z-index: 999;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+}
+
+/* Desktop: comportamiento normal */
+@media (min-width: 768px) {
+  .btn-wrapper {
+    position: static;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+
+}
+
+.bg-danger {
+    --bs-bg-opacity: 1;
+    background-color: #CE0058 !important;
+}
+
