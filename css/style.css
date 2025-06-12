@@ -1,0 +1,308 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+/* Fuente Bree - Regular */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeRegular.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* Fuente Bree - Bold */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeBold.otf') format('opentype');
+     font-weight: bold;
+     font-style: normal;
+}
+
+/* Fuente Bree - ExtraBold */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeExtrabold.otf') format('opentype');
+     font-weight: 800;
+     font-style: normal;
+}
+
+/* Fuente Bree - Light */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeLight.otf') format('opentype');
+     font-weight: 300;
+     font-style: normal;
+}
+
+/* Fuente Bree - Thin */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeThin.otf') format('opentype');
+     font-weight: 200;
+     font-style: normal;
+}
+
+/* Fuente Bree - Semibold */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeSemibold.otf') format('opentype');
+     font-weight: 600;
+     font-style: normal;
+}
+
+/* Fuente Bree - Oblique */
+@font-face {
+     font-family: 'Bree Oblique';
+     src: url('../assets/fonts/Bree/BreeOblique_Reg.otf') format('opentype');
+     font-weight: normal;
+     font-style: oblique;
+}
+
+
+/* Fuente Inter - Regular */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* Fuente Inter - Bold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Bold.ttf') format('truetype');
+     font-weight: bold;
+     font-style: normal;
+}
+
+/* Fuente Inter - ExtraBold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-ExtraBold.ttf') format('truetype');
+     font-weight: 800;
+     font-style: normal;
+}
+
+/* Fuente Inter - Black */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Black.ttf') format('truetype');
+     font-weight: 900;
+     font-style: normal;
+}
+
+/* Fuente Inter - Light */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Light.ttf') format('truetype');
+     font-weight: 300;
+     font-style: normal;
+}
+
+/* Fuente Inter - ExtraLight */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-ExtraLight.ttf') format('truetype');
+     font-weight: 200;
+     font-style: normal;
+}
+
+/* Fuente Inter - SemiBold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-SemiBold.ttf') format('truetype');
+     font-weight: 600;
+     font-style: normal;
+}
+
+/* Fuente Inter - Medium */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Medium.ttf') format('truetype');
+     font-weight: 500;
+     font-style: normal;
+}
+
+/* Fuente Inter - Thin */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Thin.ttf') format('truetype');
+     font-weight: 100;
+     font-style: normal;
+}
+
+
+h1 {
+    font-family: 'Bree', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: #CE0058 !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Bree', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    color: #CE0058 !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+p {
+  color: #252A2D;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+.text-primary-1 {
+  color: #252A2D;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 155.556% */
+}
+
+.text-title-section-card {
+  color: #252A2D;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+}
+
+.text-subtitle-section{
+  color: #252A2D;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.text-center-left-mobile {
+  text-align: left; 
+}
+
+@media (min-width: 576px) {
+  .text-center-left-mobile {
+    text-align: center;
+  }
+}
+
+
+.rounded-6 {
+    border-radius: 16px;
+}
+
+
+.cb-orimary-btn-pink {
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: #CE0058;
+  border-radius: 28px;
+  background:#CE0058;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.cb-orimary-btn-pink:hover {
+  background-color: #960048;
+  color: #fff;
+  /* asegúrate que sigue siendo blanco en hover */
+}
+
+.ps-24 {
+  padding-left: 48px;
+}
+
+@media (max-width: 576px) {
+  .ps-24 {
+    padding-left: 16px;
+  }
+}
+
+
+.timeline-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-line {
+  width: 4px;
+  height: 100%;
+  background-color: #CE0058;
+  margin-top: 4px;
+  flex-grow: 1;
+}
+
+
+.border-top-gray {
+  border-top: 1px solid #D8DADA;
+}
+
+@media (max-width: 576px) {
+  .border-top-gray {
+    border-top: none;
+  }
+}
+
+.text-link {
+  color: #CE0058;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.color-cb {
+  color: #CE0058;
+}
+
+.footer {
+  background-color: #fff;
+   border-top: 1px solid #D8DADA;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+
+.mb-75-mobile {
+  margin-bottom: 75px;
+}
+
+@media (min-width: 576px) {
+  .mb-75-mobile {
+    margin-bottom: 0;
+  }
+}
