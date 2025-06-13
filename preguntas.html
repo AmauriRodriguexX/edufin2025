@@ -15,6 +15,7 @@
      <!-- Hojas de estilo -->
      <link rel="stylesheet" href="css/cb.min.css" />
      <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet" href="css/forms.css" />
      <!-- Puedes agregar más hojas si lo necesitas -->
      <!-- <link rel="stylesheet" href="responsive.css" /> -->
 
@@ -35,25 +36,20 @@
 
           <!-- STEP 1 -->
           <div id="step-1">
-          
                <div id="step-1.1" class="step-content">
-          
                     <!-- Progreso -->
                     <div class="mb-4">
                          <div class="progress" style="height: 10px;">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0"
-                                   aria-valuemin="0" aria-valuemax="100"></div>
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 0%;"
+                                   aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                          </div>
                          <small class="text-subprogress">Progreso 0%</small>
                     </div>
-          
                     <!-- Intro -->
                     <h4 class="fw-semibold text-rosa">Responde estas sencillas preguntas y descubre cómo manejas tus
                          finanzas.</h4>
-          
                     <!-- Pregunta -->
                     <p class="text-sub-q-1">¿A quién le has pedido dinero prestado alguna vez?</p>
-          
                     <!-- Opciones tipo card -->
                     <div class="row g-3 mb-5">
                          <div class="col-md-3">
@@ -84,8 +80,6 @@
                               </label>
                          </div>
                     </div>
-          
-          
                     <!-- Botón responsivo -->
                     <div class="btn-wrapper text-center mt-4">
                          <button id="btn-step-1.1" class="btn cb-orimary-btn-pink next-btn" data-next="step-1.2"
@@ -93,78 +87,407 @@
                               Siguiente
                          </button>
                     </div>
-          
+
                </div>
-          
-          
+
                <div id="step-1.2" class="step-content d-none">
-                    <p><strong>Pregunta 1.2:</strong> ¿Prefieres café o té?</p>
-                    <div class="form-check">
-                         <input class="form-check-input" type="radio" name="bebida1" id="bebida1a">
-                         <label class="form-check-label" for="bebida1a">Café</label>
+                    <!-- Progreso -->
+                    <div class="mb-4">
+                         <div class="progress" style="height: 10px;">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;"
+                                   aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                         </div>
+                         <small class="text-subprogress">Progreso 25%</small>
                     </div>
-                    <div class="form-check">
-                         <input class="form-check-input" type="radio" name="bebida1" id="bebida1b">
-                         <label class="form-check-label" for="bebida1b">Té</label>
+
+                    <!-- Intro -->
+                    <h4 class="fw-semibold text-rosa">Responde estas sencillas preguntas y descubre cómo manejas tus
+                         finanzas.</h4>
+
+                    <!-- Pregunta -->
+                    <p class="text-sub-q-1">Hoy en día ¿a qué te dedicas principalmente?</p>
+
+                    <!-- Opciones tipo card -->
+                    <div class="row g-3 mb-5">
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="prestamo1" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-4.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Tengo un negocio</p>
+                                   </div>
+                              </label>
+                         </div>
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="prestamo1" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-5.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Soy empleado</p>
+                                   </div>
+                              </label>
+                         </div>
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="prestamo1" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-6.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Soy estudiante</p>
+                                   </div>
+                              </label>
+                         </div>
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="prestamo1" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-7.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Soy pensionado</p>
+                                   </div>
+                              </label>
+                         </div>
                     </div>
-                    <button class="btn btn-primary mt-3 next-btn" data-next="step-1.3" disabled>Siguiente</button>
+
+
+                    <!-- Botón responsivo -->
+                    <div class="btn-wrapper text-center mt-4">
+                         <button id="btn-step-1.2" class="btn cb-orimary-btn-pink next-btn" data-next="step-1.3"
+                              disabled>
+                              Siguiente
+                         </button>
+                    </div>
                </div>
-          
+
                <div id="step-1.3" class="step-content d-none">
-                    <p><strong>Pregunta 1.3:</strong> ¿Te gusta madrugar?</p>
-                    <div class="form-check">
-                         <input class="form-check-input" type="radio" name="madrugar1" id="madrugar1a">
-                         <label class="form-check-label" for="madrugar1a">Sí</label>
+                    <!-- Progreso -->
+                    <div class="mb-4">
+                         <div class="progress" style="height: 10px;">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;"
+                                   aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                         </div>
+                         <small class="text-subprogress">Progreso 50%</small>
                     </div>
-                    <div class="form-check">
-                         <input class="form-check-input" type="radio" name="madrugar1" id="madrugar1b">
-                         <label class="form-check-label" for="madrugar1b">No</label>
+
+                    <!-- Intro -->
+                    <h4 class="fw-semibold text-rosa">Responde estas sencillas preguntas y descubre cómo manejas tus
+                         finanzas.</h4>
+
+                    <!-- Pregunta -->
+                    <p class="text-sub-q-1">Lo que tu piensas al solicitar un crédito en el banco es:</p>
+
+                    <!-- Opciones tipo card -->
+                    <div class="row g-3 mb-5">
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="prestamo1" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-8.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">No me lo darían</p>
+                                   </div>
+                              </label>
+                         </div>
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="prestamo1" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-9.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Tardarían en dármelo</p>
+                                   </div>
+                              </label>
+                         </div>
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="prestamo1" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-10.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Me lo aprobarían fácilmente</p>
+                                   </div>
+                              </label>
+                         </div>
                     </div>
-                    <button class="btn btn-primary mt-3 next-btn" data-next="step-1.4" disabled>Siguiente</button>
+
+
+                    <!-- Botón responsivo -->
+                    <div class="btn-wrapper text-center mt-4">
+                         <button id="btn-step-1.3" class="btn cb-orimary-btn-pink next-btn" data-next="step-1.4"
+                              disabled>
+                              Siguiente
+                         </button>
+                    </div>
                </div>
-          
+
                <div id="step-1.4" class="step-content d-none">
-                    <p><strong>Pregunta 1.4:</strong> ¿Prefieres frío o calor?</p>
-                    <div class="form-check">
-                         <input class="form-check-input" type="radio" name="clima1" id="clima1a">
-                         <label class="form-check-label" for="clima1a">Frío</label>
+                    <!-- Progreso -->
+                    <div class="mb-4">
+                         <div class="progress" style="height: 10px;">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;"
+                                   aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                         </div>
+                         <small class="text-subprogress">Progreso 75%</small>
                     </div>
-                    <div class="form-check">
-                         <input class="form-check-input" type="radio" name="clima1" id="clima1b">
-                         <label class="form-check-label" for="clima1b">Calor</label>
+
+                    <!-- Intro -->
+                    <h4 class="fw-semibold text-rosa">Responde estas sencillas preguntas y descubre cómo manejas tus
+                         finanzas.</h4>
+
+                    <!-- Pregunta -->
+                    <p class="text-sub-q-1">¿Quién decide cómo se gasta el dinero en tu casa?</p>
+
+                    <!-- Opciones tipo card -->
+                    <div class="row g-3 mb-5">
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="credito1" value="incorrecto" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-11.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Yo tomo las decisiones</p>
+                                   </div>
+                              </label>
+                         </div>
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="credito1" value="incorrecto" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-12.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Alguien más toma las decisiones</p>
+                                   </div>
+                              </label>
+                         </div>
+                         <div class="col-md-3">
+                              <label class="opcion-card w-100">
+                                   <input type="radio" name="credito1" value="correcto" class="d-none opcion-radio">
+                                   <div class="card card-option">
+                                        <img src="assets/resources/icon-1.png" alt="" width="58" class="p-r24">
+                                        <p class="no-margin">Entre varios tomamos las decisiones</p>
+                                   </div>
+                              </label>
+                         </div>
                     </div>
-                    <button class="btn btn-primary mt-3 validar-btn" data-step="1">Verificar respuestas</button>
+
+                    <!-- Botón verificar -->
+                    <div class="btn-wrapper text-center mt-4">
+                         <button id="btn-step-1.4" class="btn cb-orimary-btn-pink validar-btn" data-step="1" disabled>
+                              Verificar respuestas
+                         </button>
+                    </div>
                </div>
-          
+
+
                <div id="step-1-correcto" class="step-content d-none">
-                    <p class="text-success">¡Correcto!</p>
-                    <button class="btn btn-primary avanzar-btn" data-next="step-2.1">Avanzar al siguiente
-                         bloque</button>
+                    <!-- Progreso -->
+                    <div class="mb-4">
+                         <div class="progress" style="height: 10px;">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;"
+                                   aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                         </div>
+                         <small class="text-subprogress">Progreso 100%</small>
+                    </div>
+
+                    <!-- Contenido central -->
+                    <div class="text-center-left-mobile">
+                         <p class="mb-4">Tu personalidad financiera es:</p>
+                         <h2 class="fw-bold text-rosa mb-3">Cautelosa</h2>
+                         <p class="mb-4">
+                              Eres una persona talentosa y con ganas de emprender, vas paso a pasito y te <br> gusta
+                              conocer muy bien antes de
+                              contratar algún crédito.
+                         </p>
+                         <p class="mb-4">
+                              Regístrate para iniciar el <strong>nivel básico</strong> de nuestro curso.
+                         </p>
+
+                         <!-- Botón iniciar curso -->
+                         <div class="btn-wrapper text-center mt-4 mb-4 d-flex justify-content-center">
+                              <button class="btn cb-orimary-btn-pink avanzar-btn" data-next="step-2.1">
+                                   Iniciar curso
+                              </button>
+                         </div>
+
+                         <!-- Imagen final -->
+                         <img src="assets/resources/personalidad-cautelosa.jpg" alt="Imagen personalidad cautelosa"
+                              class="img-fluid mt-4 rounded-6 img-person-end">
+                    </div>
                </div>
-          
+
+
                <div id="step-1-reintentar" class="step-content d-none">
                     <p class="text-danger">Respuestas incorrectas.</p>
                     <button class="btn btn-danger reiniciar-btn" data-step="1">Intentar nuevamente</button>
                </div>
           </div>
 
-          <!-- STEP 2 (sin cambios por ahora) -->
+          <!-- STEP 2-->
           <div id="step-2">
                <div id="step-2.1" class="step-content d-none">
-                    <p><strong>Pregunta 2.1:</strong> ¿Eres puntual?</p>
-                    <div class="form-check">
-                         <input class="form-check-input" type="radio" name="puntual2" id="puntual2a">
-                         <label class="form-check-label" for="puntual2a">Sí</label>
+                    <div class="form-wrapper mx-auto container-600">
+                         <h2 class="text-center-left-mobile mb-3">Registra tus datos para iniciar el curso.</h2>
+                         <p class="text-center-left-mobile text-primary-1">
+                              Esta información se mostrará en tu diploma una vez que finalices el nivel básico.
+                              <br>
+                         <p class="text-center-left-mobile d-block mt-1">Todos los campos con (*) son obligatorios.</>
+                         </p>
+
+                         <!-- Pregunta de cliente -->
+                         <div class="mb-3 mt-5">
+                              <label class="form-label text-dark">¿Eres cliente Compartamos?*</label>
+                              <br>
+                              <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="radio" name="cliente" id="clienteSi" value="si"
+                                        checked>
+                                   <label class="form-check-label" for="clienteSi">Sí</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                   <input class="form-check-input" type="radio" name="cliente" id="clienteNo"
+                                        value="no">
+                                   <label class="form-check-label" for="clienteNo">No</label>
+                              </div>
+                         </div>
+
+                         <!-- Formulario para clientes -->
+                         <div id="form-si" class="cliente-form">
+                              <div class="row g-3">
+                                   <div class="col-md-6 position-relative">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                             <label class="form-label mb-0">ID Cliente*</label>
+                                             <div class="tooltip-container position-relative">
+                                                  <img src="assets/resources/icon-help.png" alt="ayuda"
+                                                       class="icono-tooltip" id="tooltipTrigger">
+                                                  <div class="custom-tooltip d-none" id="tooltipBox">
+                                                       <p class="mb-1 text-white"><b>Si no conoces tu ID,
+                                                                 consúltalo:</b></p>
+                                                       <ol class="mb-0 ps-3">
+                                                            <li>Con tu promotor o asesor</li>
+                                                            <li>En el Control de Desembolso, acércate a tu Presidente en
+                                                                 la Sucursal</li>
+                                                       </ol>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <input type="text" class="form-control custom-input"
+                                             placeholder="3 a 12 dígitos">
+                                   </div>
+
+
+                                   <div class="col-md-6">
+                                        <label class="form-label">Nombre(s)*</label>
+                                        <input type="text" class="form-control custom-input" placeholder="Ej. Luis">
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <label class="form-label">Apellidos*</label>
+                                        <input type="text" class="form-control custom-input"
+                                             placeholder="Ej. Díaz Díaz">
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <label class="form-label">Teléfono celular*</label>
+                                        <input type="tel" class="form-control custom-input tel-input" maxlength="10"
+                                             placeholder="Ej. 5512345678">
+                                        <small class="feedback"></small>
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <label class="form-label">Compañía telefónica*</label>
+                                        <select class="form-select custom-input">
+                                             <option value="">Selecciona una opción</option>
+                                             <option>Telcel</option>
+                                             <option>AT&T</option>
+                                             <option>Movistar</option>
+                                        </select>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Formulario para no clientes -->
+                         <div id="form-no" class="cliente-form d-none">
+                              <div class="row g-3">
+                                   <div class="col-md-6">
+                                        <label class="form-label">Nombre(s)*</label>
+                                        <input type="text" class="form-control custom-input" placeholder="Ej. Luis">
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <label class="form-label">Apellidos*</label>
+                                        <input type="text" class="form-control custom-input"
+                                             placeholder="Ej. Díaz Díaz">
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <label class="form-label">Teléfono celular*</label>
+                                        <input type="tel" class="form-control custom-input tel-input" maxlength="10"
+                                             placeholder="Ej. 5512345678">
+                                        <small class="feedback"></small>
+                                   </div>
+
+                                   <div class="col-md-6">
+                                        <label class="form-label">Compañía telefónica*</label>
+                                        <select class="form-select custom-input">
+                                             <option value="">Selecciona una opción</option>
+                                             <option>Telcel</option>
+                                             <option>AT&T</option>
+                                             <option>Movistar</option>
+                                        </select>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Checkbox de términos -->
+                         <div class="form-check mt-4">
+                              <input class="form-check-input" type="checkbox" id="checkTerminos">
+                              <label class="form-check-label" for="checkTerminos">
+                                   He leído y estoy de acuerdo con el Aviso de Privacidad así los <a href="#"
+                                        class="link-cb">Términos y condiciones</a>.
+                              </label>
+                         </div>
+
+                         <!-- Botón continuar -->
+                         <div class="btn-wrapper text-center mt-4 d-flex justify-content-center">
+                              <button class="btn cb-orimary-btn-pink avanzar-btn" id="btn-next-2-2" data-next="step-3.1"
+                                   disabled>
+                                   Continuar
+                              </button>
+                         </div>
+
                     </div>
-                    <div class="form-check">
-                         <input class="form-check-input" type="radio" name="puntual2" id="puntual2b">
-                         <label class="form-check-label" for="puntual2b">No</label>
-                    </div>
-                    <button class="btn btn-primary mt-3 next-btn" data-next="step-2.2" disabled>Siguiente</button>
                </div>
                <!-- ... resto del step-2 sigue igual ... -->
           </div>
+          <!-- STEP 2-->
+          <div id="step-3">
+               <div id="step-3.1" class="step-content d-none">
+<h1>test</h1>
+               </div>
+          </div>
+
      </main>
+
+     
+
+
+          
+          <!-- ... modal terminos y condiciones... -->
+          <div id="modalOverlay" class="modal-overlay d-none">
+               <div class="modal-box">
+                    <button id="closeModal" class="btn-close">
+                         <img src="assets/resources/icon-close.png" alt="Cerrar" width="24" height="24">
+                    </button>
+
+                    <h3 class="modal-title mb-4 mt-4">Términos y condiciones</h3>
+
+                    <p class="modal-text">
+                         Banco Compartamos, S.A. Institución de Banca Múltiple y Compartamos Servicios, S.A. de C.V.,
+                         empresas pertenecientes a GENTERA, con domicilio en Insurgentes Sur número 1458 piso 5, Colonia
+                         Actipan, Alcaldía Benito Juárez, C.P. 03230, México, Ciudad de México, utilizará sus datos
+                         personales y uso de imagen requeridos en este formulario para las siguientes finalidades: i)
+                         Identificarlo y corroborar su identidad; ii) Registrar la información y mantener actualizada
+                         nuestra base de datos; iii) Invitarlo a participar o participar en nuestros eventos, campañas,
+                         concursos o sorteos, y en caso de resultar ganador, contactarlo para la entrega del premio.
+                         Para más información acerca del tratamiento y de los derechos que puede hacer valer, usted
+                         puede acceder al Aviso de Privacidad Integral para Clientes a través de <a
+                              href="https://www.gentera.com.mx" class="link-cb" target="_blank">www.gentera.com.mx</a>
+                         en la sección Avisos de Privacidad.
+                    </p>
+               </div>
+          </div>
 
 
      <footer class="footer mt-auto">
@@ -202,6 +525,14 @@
 
      <!-- Scripts -->
      <script src="js/main.js"></script>
+     <script src="js/step-bystep.js"></script>
+     <script src="js/forms.js"></script>
+     <script>
+
+     </script>
+
+
+
 </body>
 
 </html>

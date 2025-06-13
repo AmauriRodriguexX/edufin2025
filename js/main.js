@@ -44,3 +44,27 @@
         document.getElementById(nextId)?.classList.remove("d-none");
       }
     });
+
+
+// Modal  
+
+document.addEventListener('DOMContentLoaded', () => {
+  const openModalLink = document.querySelector('a.link-cb');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const closeModalBtn = document.getElementById('closeModal');
+
+  openModalLink.addEventListener('click', (e) => {
+    e.preventDefault(); // Evita navegación
+    modalOverlay.classList.remove('d-none');
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    modalOverlay.classList.add('d-none');
+  });
+
+  modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+      modalOverlay.classList.add('d-none');
+    }
+  });
+});

@@ -1,4 +1,6 @@
-html, body {
+/* Estructura básica */
+html,
+body {
   height: 100%;
 }
 
@@ -10,158 +12,160 @@ body {
 main {
   flex: 1;
 }
-/* Fuente Bree - Regular */
+
+/* -------------------- */
+/* Fuentes Bree */
+/* -------------------- */
+
 @font-face {
-     font-family: 'Bree';
-     src: url('../assets/fonts/Bree/BreeRegular.otf') format('opentype');
-     font-weight: normal;
-     font-style: normal;
+  font-family: 'Bree';
+  src: url('../assets/fonts/Bree/BreeRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* Fuente Bree - Bold */
 @font-face {
-     font-family: 'Bree';
-     src: url('../assets/fonts/Bree/BreeBold.otf') format('opentype');
-     font-weight: bold;
-     font-style: normal;
+  font-family: 'Bree';
+  src: url('../assets/fonts/Bree/BreeBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-/* Fuente Bree - ExtraBold */
 @font-face {
-     font-family: 'Bree';
-     src: url('../assets/fonts/Bree/BreeExtrabold.otf') format('opentype');
-     font-weight: 800;
-     font-style: normal;
+  font-family: 'Bree';
+  src: url('../assets/fonts/Bree/BreeExtrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
 }
 
-/* Fuente Bree - Light */
 @font-face {
-     font-family: 'Bree';
-     src: url('../assets/fonts/Bree/BreeLight.otf') format('opentype');
-     font-weight: 300;
-     font-style: normal;
+  font-family: 'Bree';
+  src: url('../assets/fonts/Bree/BreeLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
 }
 
-/* Fuente Bree - Thin */
 @font-face {
-     font-family: 'Bree';
-     src: url('../assets/fonts/Bree/BreeThin.otf') format('opentype');
-     font-weight: 200;
-     font-style: normal;
+  font-family: 'Bree';
+  src: url('../assets/fonts/Bree/BreeThin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
 }
 
-/* Fuente Bree - Semibold */
 @font-face {
-     font-family: 'Bree';
-     src: url('../assets/fonts/Bree/BreeSemibold.otf') format('opentype');
-     font-weight: 600;
-     font-style: normal;
+  font-family: 'Bree';
+  src: url('../assets/fonts/Bree/BreeSemibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
 }
 
-/* Fuente Bree - Oblique */
 @font-face {
-     font-family: 'Bree Oblique';
-     src: url('../assets/fonts/Bree/BreeOblique_Reg.otf') format('opentype');
-     font-weight: normal;
-     font-style: oblique;
+  font-family: 'Bree Oblique';
+  src: url('../assets/fonts/Bree/BreeOblique_Reg.otf') format('opentype');
+  font-weight: normal;
+  font-style: oblique;
 }
 
+/* -------------------- */
+/* Fuentes Inter */
+/* -------------------- */
 
-/* Fuente Inter - Regular */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-Regular.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* Fuente Inter - Bold */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-Bold.ttf') format('truetype');
-     font-weight: bold;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-/* Fuente Inter - ExtraBold */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-ExtraBold.ttf') format('truetype');
-     font-weight: 800;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
 }
 
-/* Fuente Inter - Black */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-Black.ttf') format('truetype');
-     font-weight: 900;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
-/* Fuente Inter - Light */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-Light.ttf') format('truetype');
-     font-weight: 300;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 
-/* Fuente Inter - ExtraLight */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-ExtraLight.ttf') format('truetype');
-     font-weight: 200;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
 }
 
-/* Fuente Inter - SemiBold */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-SemiBold.ttf') format('truetype');
-     font-weight: 600;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
-/* Fuente Inter - Medium */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-Medium.ttf') format('truetype');
-     font-weight: 500;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
-/* Fuente Inter - Thin */
 @font-face {
-     font-family: 'Inter';
-     src: url('../assets/fonts/INTER/Inter-Thin.ttf') format('truetype');
-     font-weight: 100;
-     font-style: normal;
+  font-family: 'Inter';
+  src: url('../assets/fonts/INTER/Inter-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
 
 
 h1 {
-    font-family: 'Bree', sans-serif;
-    font-weight: 800;
-    font-size: 48px;
-    color: #CE0058 !important;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+  font-family: 'Bree', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: #CE0058 !important;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 h2 {
-    font-family: 'Bree', sans-serif;
-    font-weight: 800;
-    font-size: 36px;
-    color: #CE0058 !important;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+  font-family: 'Bree', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #CE0058 !important;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: 'Bree', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #CE0058 !important;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 h4 {
   font-family: 'Bree', sans-serif;
   font-weight: 600;
-  font-size: 20px; /* mobile */
+  font-size: 20px;
+  /* mobile */
   color: #CE0058 !important;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -205,7 +209,7 @@ p {
   line-height: 36px;
 }
 
-.text-subtitle-section{
+.text-subtitle-section {
   color: #252A2D;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -236,14 +240,14 @@ p {
 
 @media (min-width: 576px) {
   .text-sub-q-1 {
-    margin-bottom: 58px; 
+    margin-bottom: 58px;
     font-size: 18px;
   }
 }
 
 
 .text-center-left-mobile {
-  text-align: left; 
+  text-align: left;
 }
 
 @media (min-width: 576px) {
@@ -254,7 +258,7 @@ p {
 
 
 .rounded-6 {
-    border-radius: 16px;
+  border-radius: 16px;
 }
 
 
@@ -278,7 +282,7 @@ p {
   .cb-orimary-btn-pink {
     width: 280px;
   }
-} 
+}
 
 .cb-orimary-btn-pink:hover {
   background-color: #960048;
@@ -345,7 +349,7 @@ p {
 
 .footer {
   background-color: #fff;
-   border-top: 1px solid #D8DADA;
+  border-top: 1px solid #D8DADA;
 }
 
 .f-14 {
@@ -383,7 +387,7 @@ p {
   border: 1px solid #960048;
 }
 
-.opcion-card input[type="radio"]:checked + .card-option {
+.opcion-card input[type="radio"]:checked+.card-option {
   border: 2px solid #CE0058;
 }
 
@@ -424,7 +428,7 @@ p {
     z-index: 999;
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
   }
-  
+
 }
 
 /* Desktop: comportamiento normal */
@@ -440,7 +444,143 @@ p {
 }
 
 .bg-danger {
-    --bs-bg-opacity: 1;
-    background-color: #CE0058 !important;
+  --bs-bg-opacity: 1;
+  background-color: #CE0058 !important;
 }
 
+.img-person-end {
+  max-width: 40%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .img-person-end {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.icono-tooltip {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.custom-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translate(-243px, 3px);
+  /* alineado al borde izquierdo del ícono */
+  margin-top: 8px;
+  /* separación */
+  background-color: #847770;
+  color: #fff;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  width: 272px;
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+/* Flechita arriba, apuntando hacia el ícono */
+.custom-tooltip::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 246px;
+  /* puedes ajustar esto según el ícono */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #847770;
+}
+
+.tooltip-visible {
+  display: block !important;
+}
+
+
+/* Mostrar tooltip en desktop (hover) */
+@media (hover: hover) and (pointer: fine) {
+  .tooltip-container:hover .custom-tooltip {
+    display: block !important;
+  }
+}
+
+
+.container-600 {
+  max-width: 686px;
+  padding: 0 16px;
+  margin: 0 auto;
+  /* Para centrar dentro del contenedor padre */
+}
+
+.link-cb {
+  color: #CE0058;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+  text-decoration: underline;
+}
+
+.link-cb:hover {
+  color: #960048;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* #000 con 50% opacidad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 720px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-text {
+  font-size: 16px;
+  color: #252A2D;
+  line-height: 1.6;
+}
+
+.link-cb {
+  color: #B0005B;
+  text-decoration: underline;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 16px;
+  right: 23px;
+  cursor: pointer;
+}
+
+body .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+  opacity: 1;
+}
