@@ -177,8 +177,6 @@ h4 {
   }
 }
 
-
-
 p {
   color: #252A2D;
   font-size: 16px;
@@ -243,6 +241,17 @@ p {
     margin-bottom: 58px;
     font-size: 18px;
   }
+}
+
+.text-card-level {
+     font-size: 16px;
+     font-weight: 600;
+}
+
+.text-time {
+     color: #5E6A71;
+     font-size: 14px;
+     font-weight: 400;
 }
 
 
@@ -583,4 +592,53 @@ body .btn-close:focus {
   outline: none;
   box-shadow: none;
   opacity: 1;
+}
+
+
+.btn-play {
+  width: 64px;
+  height: 64px;
+  background: url('../assets/resources/icon-play.png') no-repeat center center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out, transform 0.2s ease;
+  background-color: transparent;
+  z-index: 10;
+  position: relative;
+}
+
+.btn-play:hover {
+  background-image: url('../assets/resources/icon-play-hover.png');
+  transform: scale(1.05);
+}
+
+
+#videoContainer.has-thumbnail::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1); /* 5% de opacidad */
+  z-index: 2;
+}
+
+#videoContainer img {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-play {
+  z-index: 3;
+}
+
+
+.card-nivel {
+  background-color: #FAF9F7;
+  border-radius: 16px;
+
+}
+
+
+.mini-progress {
+     background-color: #CE0058;
 }

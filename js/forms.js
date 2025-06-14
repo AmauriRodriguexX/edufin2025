@@ -76,3 +76,36 @@ document.addEventListener('DOMContentLoaded', () => {
      }
    });
    
+
+// validracion de formulario final de estrelllas
+document.addEventListener("DOMContentLoaded", () => {
+  let rating = 0;
+
+  const stars = document.querySelectorAll("#star-rating .star");
+  const submitBtn = document.getElementById("final-submit-btn");
+
+  // Manejo de estrellas
+  stars.forEach(star => {
+    star.addEventListener("click", () => {
+      rating = parseInt(star.dataset.value);
+      stars.forEach(s => {
+        s.src = parseInt(s.dataset.value) <= rating
+          ? "assets/resources/star.png"
+          : "assets/resources/star-inactive.png";
+      });
+      checkFinalValidity();
+    });
+  });
+
+  // Validar solo radios y estrellas
+  document.querySelectorAll(".q-final").forEach(el =>
+    el.addEventListener("change", checkFinalValidity)
+  );
+
+  function checkFinalValidity() {
+    const q1Checked = document.querySelector('input[name="q1-final"]:checked');
+    const q2Checked = document.querySelector('input[name="q2-final"]:checked');
+    const valid = q1Checked && q2Checked && rating > 0;
+    submitBtn.disabled = !valid;
+  }
+});

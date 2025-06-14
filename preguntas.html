@@ -451,43 +451,801 @@
                </div>
                <!-- ... resto del step-2 sigue igual ... -->
           </div>
-          <!-- STEP 2-->
+          <!-- STEP 3 -->
+
           <div id="step-3">
                <div id="step-3.1" class="step-content d-none">
-<h1>test</h1>
+                    <div class="container">
+                         <div class="row align-items-center">
+
+                              <!-- Columna del video -->
+                              <div class="col-md-8 mb-4 mb-md-0">
+                                   <!-- Contenedor del video -->
+                                   <div id="videoContainer-3-1"
+                                        class="position-relative has-thumbnail rounded-4 overflow-hidden"
+                                        style="aspect-ratio: 16 / 9;">
+                                        <img src="assets/resources/basico1.png" alt="Portada del video"
+                                             class="w-100 h-100 object-fit-cover">
+                                        <button
+                                             class="position-absolute top-50 start-50 translate-middle btn-play play-btn"
+                                             data-target="videoContainer-3-1" data-video="GOyaSPMvay0"
+                                             data-btnnext="btn-next-3-2" aria-label="Reproducir video"></button>
+                                   </div>
+                              </div>
+
+                              <!-- Columna derecha -->
+                              <div class="col-md-4">
+                                   <!-- Card: encabezado del nivel -->
+                                   <div class="card card-nivel p-3 border-0 shadow mb-5">
+                                        <div class="row align-items-center justify-content-center align-items-start">
+
+                                             <!-- Icono -->
+                                             <div class="col-md-2 col-2 d-flex align-items-start">
+                                                  <img src="assets/resources/basico.png" alt="Nivel básico" width="48">
+                                             </div>
+
+                                             <!-- Contenido -->
+                                             <div class="col-md-10 col-10">
+                                                  <!-- Nivel y estrella -->
+                                                  <p class="mb-1 d-flex align-items-center text-card-level">
+                                                       Nivel: Básico
+                                                       <img src="assets/resources/star.png" alt="Estrella" width="14"
+                                                            class="ms-2">
+                                                  </p>
+
+                                                  <!-- Lección + barra en un mismo renglón -->
+                                                  <div class="d-flex align-items-center">
+                                                       <p class="mb-0 text-muted small me-2">Lección 1 de 4</p>
+                                                       <div class="progress flex-grow-1"
+                                                            style="height: 6px; border-radius: 10px;">
+                                                            <div class="progress-bar mini-progress"
+                                                                 style="width: 25%; border-radius: 10px;"></div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- Contenido restante -->
+                                   <h4 class="fw-bold text-rosa mb-3">¿Cómo generar un dinerito extra?</h4>
+                                   <p class="mb-2 text-time" data-time="videoContainer-3-1">Duración: 0:00 min</p>
+                                   <p>Conoce cómo iniciar tu propio negocio y tener una lanita extra.</p>
+
+                                   <div class="btn-wrapper text-center mt-4 d-flex justify-content-center">
+                                        <button class="btn cb-orimary-btn-pink avanzar-btn w-100" id="btn-next-3-2"
+                                             data-next="step-3.2" disabled>
+                                             Continuar
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div id="step-3.2" class="step-content d-none">
+                    <!-- Título -->
+                    <h4 class="fw-bold text-rosa mb-2">¡Es hora de poner a prueba lo que aprendiste!</h4>
+                    <p class="mb-4">Responde correctamente las siguientes preguntas:</p>
+                    <hr class="mb-4">
+
+                    <!-- Pregunta 1 -->
+                    <div class="mb-4">
+                         <p class="fw-semibold mb-2">¿Puedo incrementar mis entradas de dinero emprendiendo?</p>
+                         <div class="form-check mb-2">
+                              <input class="form-check-input validate-question" type="radio" name="q1" id="q1a"
+                                   value="correcto">
+                              <label class="form-check-label text-muted" for="q1a">Con mis talentos, comenzando con lo
+                                   que tengo.</label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input validate-question" type="radio" name="q1" id="q1b"
+                                   value="incorrecto">
+                              <label class="form-check-label text-muted" for="q1b">Siempre y cuando tenga mucho dinero
+                                   para empezar.</label>
+                         </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="mb-4">
+                         <p class="fw-semibold mb-2">Uno de los errores comunes al empezar un negocio es:</p>
+                         <div class="form-check mb-2">
+                              <input class="form-check-input validate-question" type="radio" name="q2" id="q2a"
+                                   value="incorrecto">
+                              <label class="form-check-label text-muted" for="q2a">Tener poco dinero para
+                                   invertir.</label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input validate-question" type="radio" name="q2" id="q2b"
+                                   value="correcto">
+                              <label class="form-check-label text-muted" for="q2b">No separar los gastos del negocio de
+                                   los personales.</label>
+                         </div>
+                    </div>
+
+                    <!-- Botón verificar -->
+                    <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                         <button id="btn-step-3.2" class="btn cb-orimary-btn-pink validar-btn" data-step="3.2" disabled>
+                              Verificar respuestas
+                         </button>
+                    </div>
+               </div>
+
+
+               <div id="step-3.2-correcto" class="step-content d-none text-center">
+                    <div class="container">
+                         <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+                              <!-- Imagen -->
+                              <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                                   <img src="assets/resources/respuestas-correctas-1.jpg" alt="Curso financiero"
+                                        class="img-fluid rounded-6">
+                              </div>
+
+                              <!-- Texto + botón -->
+                              <div class="col-lg-6 ps-24">
+                                   <h2 class="text-start mb-3">¡Felicidades!</h1>
+                                        <p class="text-start text-primary-1 mb-4">
+                                             Tus respuesta fueron correctas. Avanza a la siguiente lección.
+                                        </p>
+
+
+                                        <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                                             <button class="btn cb-orimary-btn-pink avanzar-btn"
+                                                  data-next="step-4.1">Avanzar</button>
+                                        </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="step-3.2-reintentar" class="step-content d-none text-center">
+                    <div class="container">
+                         <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+                              <!-- Imagen -->
+                              <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                                   <img src="assets/resources/respuestas-incorrectas.jpg" alt="Curso financiero"
+                                        class="img-fluid rounded-6">
+                              </div>
+
+                              <!-- Texto + botón -->
+                              <div class="col-lg-6 ps-24">
+                                   <h2 class="text-start mb-3">Algunas de tus respuestas son incorrectas</h1>
+                                        <p class="text-start text-primary-1 mb-4">
+                                             Mira nuevamente el vídeo e intenta realizar nuevamente la prueba.
+                                        </p>
+
+
+                                        <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                                             <button class="btn cb-orimary-btn-pink reiniciar-btn"
+                                                  data-step="3">Intentar nuevamente</button>
+
+                                        </div>
+                              </div>
+
+                         </div>
+                    </div>
+
+               </div>
+
+
+
+          </div>
+
+          <!-- STEP 4 -->
+
+          <div id="step-4">
+               <div id="step-4.1" class="step-content d-none">
+                    <div class="container">
+                         <div class="row align-items-center">
+
+                              <!-- Columna del video -->
+                              <div class="col-md-8 mb-4 mb-md-0">
+                                   <!-- Contenedor del video -->
+                                   <div id="videoContainer-3-2"
+                                        class="position-relative has-thumbnail rounded-4 overflow-hidden"
+                                        style="aspect-ratio: 16 / 9;">
+                                        <img src="assets/resources/basico2.png" alt="Portada del video"
+                                             class="w-100 h-100 object-fit-cover">
+                                        <button
+                                             class="position-absolute top-50 start-50 translate-middle btn-play play-btn"
+                                             data-target="videoContainer-3-2" data-video="9MmEoTZlXic"
+                                             data-btnnext="btn-next-3-3" aria-label="Reproducir video"></button>
+                                   </div>
+                              </div>
+
+                              <!-- Columna derecha -->
+                              <div class="col-md-4">
+                                   <!-- Card: encabezado del nivel -->
+                                   <div class="card card-nivel p-3 border-0 shadow mb-5">
+                                        <div class="row align-items-center justify-content-center align-items-start">
+
+                                             <!-- Icono -->
+                                             <div class="col-md-2 col-2 d-flex align-items-start">
+                                                  <img src="assets/resources/basico.png" alt="Nivel básico" width="48">
+                                             </div>
+
+                                             <!-- Contenido -->
+                                             <div class="col-md-10 col-10">
+                                                  <p class="mb-1 d-flex align-items-center text-card-level">
+                                                       Nivel: Básico
+                                                       <img src="assets/resources/star.png" alt="Estrella" width="14"
+                                                            class="ms-2">
+                                                  </p>
+
+                                                  <div class="d-flex align-items-center">
+                                                       <p class="mb-0 text-muted small me-2">Lección 2 de 4</p>
+                                                       <div class="progress flex-grow-1"
+                                                            style="height: 6px; border-radius: 10px;">
+                                                            <div class="progress-bar mini-progress"
+                                                                 style="width: 50%; border-radius: 10px;"></div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- Contenido restante -->
+                                   <h4 class="fw-bold text-rosa mb-3">Préstamos formales e informales</h4>
+                                   <p class="mb-2 text-time" data-time="videoContainer-3-2">Duración: 0:00</p>
+                                   <p>Aprovecha al máximo las ventajas de tener un préstamo con el banco.</p>
+
+                                   <div class="btn-wrapper text-center mt-4 d-flex justify-content-center">
+                                        <button class="btn cb-orimary-btn-pink avanzar-btn w-100" id="btn-next-3-3"
+                                             data-next="step-4.2" disabled>
+                                             Continuar
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+
+               <div id="step-4.2" class="step-content d-none">
+                    <h4 class="fw-bold text-rosa mb-2">¡Es hora de poner a prueba lo que aprendiste!</h4>
+                    <p class="mb-4">Responde correctamente las siguientes preguntas:</p>
+                    <hr class="mb-4" />
+
+                    <!-- Pregunta 1 -->
+                    <div class="mb-4">
+                         <p class="fw-semibold mb-2">
+                              En caso de que necesite un préstamo, es más recomendable recurrir a:
+                         </p>
+                         <div class="form-check mb-2">
+                              <input class="form-check-input validate-question" type="radio" name="q1-step4"
+                                   id="q1a-step4" value="incorrecto" />
+                              <label class="form-check-label text-muted" for="q1a-step4">Tandas.</label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input validate-question" type="radio" name="q1-step4"
+                                   id="q1b-step4" value="correcto" />
+                              <label class="form-check-label text-muted" for="q1b-step4">Préstamos formales.</label>
+                         </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="mb-4">
+                         <p class="fw-semibold mb-2">
+                              Uno de los beneficios que tengo al solicitar créditos formales es:
+                         </p>
+                         <div class="form-check mb-2">
+                              <input class="form-check-input validate-question" type="radio" name="q2-step4"
+                                   id="q2a-step4" value="correcto" />
+                              <label class="form-check-label text-muted" for="q2a-step4">Acceder a mejores oportunidades
+                                   de crédito.</label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input validate-question" type="radio" name="q2-step4"
+                                   id="q2b-step4" value="incorrecto" />
+                              <label class="form-check-label text-muted" for="q2b-step4">No pagar intereses.</label>
+                         </div>
+                    </div>
+
+                    <!-- Botón verificar -->
+                    <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                         <button id="btn-step-4.2" class="btn cb-orimary-btn-pink validar-btn" data-step="4.2" disabled>
+                              Verificar respuestas
+                         </button>
+                    </div>
+               </div>
+
+
+               <div id="step-4.2-correcto" class="step-content d-none text-center">
+                    <div class="container">
+                         <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+                              <!-- Imagen -->
+                              <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                                   <img src="assets/resources/respuestas-correctas-1.jpg" alt="Curso financiero"
+                                        class="img-fluid rounded-6">
+                              </div>
+
+                              <!-- Texto + botón -->
+                              <div class="col-lg-6 ps-24">
+                                   <h2 class="text-start mb-3">¡Felicidades!</h1>
+                                        <p class="text-start text-primary-1 mb-4">
+                                             Tus respuesta fueron correctas. Avanza a la siguiente lección.
+                                        </p>
+
+
+                                        <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                                             <button class="btn cb-orimary-btn-pink avanzar-btn"
+                                                  data-next="step-5.1">Avanzar</button>
+                                        </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="step-4.2-reintentar" class="step-content d-none text-center">
+                    <div class="container">
+                         <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+                              <!-- Imagen -->
+                              <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                                   <img src="assets/resources/respuestas-incorrectas.jpg" alt="Curso financiero"
+                                        class="img-fluid rounded-6">
+                              </div>
+
+                              <!-- Texto + botón -->
+                              <div class="col-lg-6 ps-24">
+                                   <h2 class="text-start mb-3">Algunas de tus respuestas son incorrectas</h1>
+                                        <p class="text-start text-primary-1 mb-4">
+                                             Mira nuevamente el vídeo e intenta realizar nuevamente la prueba.
+                                        </p>
+
+
+                                        <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                                             <button class="btn cb-orimary-btn-pink reiniciar-btn"
+                                                  data-step="4">Intentar nuevamente</button>
+
+                                        </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+          </div>
+
+          <!-- STEP 5 -->
+
+          <div id="step-5">
+               <div id="step-5.1" class="step-content d-none">
+                    <div class="container">
+                         <div class="row align-items-center">
+
+                              <!-- Columna del video -->
+                              <div class="col-md-8 mb-4 mb-md-0">
+                                   <div id="videoContainer-3-3"
+                                        class="position-relative has-thumbnail rounded-4 overflow-hidden"
+                                        style="aspect-ratio: 16 / 9;">
+                                        <img src="assets/resources/basico3.png" alt="Portada del video"
+                                             class="w-100 h-100 object-fit-cover">
+                                        <button
+                                             class="position-absolute top-50 start-50 translate-middle btn-play play-btn"
+                                             data-target="videoContainer-3-3" data-video="VX6cgxZOKQ0"
+                                             data-btnnext="btn-next-3-4" aria-label="Reproducir video"></button>
+                                   </div>
+                              </div>
+
+                              <!-- Columna derecha -->
+                              <div class="col-md-4">
+                                   <div class="card card-nivel p-3 border-0 shadow mb-5">
+                                        <div class="row align-items-center justify-content-center align-items-start">
+                                             <div class="col-md-2 col-2 d-flex align-items-start">
+                                                  <img src="assets/resources/basico.png" alt="Nivel básico" width="48">
+                                             </div>
+                                             <div class="col-md-10 col-10">
+                                                  <p class="mb-1 d-flex align-items-center text-card-level">
+                                                       Nivel: Básico
+                                                       <img src="assets/resources/star.png" alt="Estrella" width="14"
+                                                            class="ms-2">
+                                                  </p>
+                                                  <div class="d-flex align-items-center">
+                                                       <p class="mb-0 text-muted small me-2">Lección 3 de 4</p>
+                                                       <div class="progress flex-grow-1"
+                                                            style="height: 6px; border-radius: 10px;">
+                                                            <div class="progress-bar mini-progress"
+                                                                 style="width: 75%; border-radius: 10px;"></div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- Contenido Lección -->
+                                   <h4 class="fw-bold text-rosa mb-3">Haz crecer tu negocio con un crédito</h4>
+                                   <p class="mb-2 text-time" data-time="videoContainer-3-3">Duración: 0:00</p>
+                                   <p>Lleva tu negocio al siguiente nivel con un crédito.</p>
+
+                                   <div class="btn-wrapper text-center mt-4 d-flex justify-content-center">
+                                        <button class="btn cb-orimary-btn-pink avanzar-btn w-100" id="btn-next-3-4"
+                                             data-next="step-5.2" disabled>
+                                             Continuar
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+
+               <div id="step-5.2" class="step-content d-none">
+                    <h4 class="fw-bold text-rosa mb-2">¡Es hora de poner a prueba lo que aprendiste!</h4>
+                    <p class="mb-4">Responde correctamente las siguientes preguntas:</p>
+                    <hr class="mb-4" />
+
+                    <!-- Pregunta 1 -->
+                    <div class="mb-4">
+                         <p class="fw-semibold mb-2">
+                              Si conozco y tengo en orden ______ de mi negocio, me sirve como comprobante de ingresos
+                              para obtener un préstamo:
+                         </p>
+                         <div class="form-check mb-2">
+                              <input class="form-check-input validate-question" type="radio" name="q1-step5"
+                                   id="q1a-step5" value="correcto" />
+                              <label class="form-check-label text-muted" for="q1a-step5">Las entradas y los
+                                   gastos.</label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input validate-question" type="radio" name="q1-step5"
+                                   id="q1b-step5" value="incorrecto" />
+                              <label class="form-check-label text-muted" for="q1b-step5">Los permisos para
+                                   vender.</label>
+                         </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="mb-4">
+                         <p class="fw-semibold mb-2">
+                              Cuando las entradas de dinero no son fijas y necesito un préstamo, la mejor opción es:
+                         </p>
+                         <div class="form-check mb-2">
+                              <input class="form-check-input validate-question" type="radio" name="q2-step5"
+                                   id="q2a-step5" value="incorrecto" />
+                              <label class="form-check-label text-muted" for="q2a-step5">Pedirle a un conocido que me
+                                   preste y le voy pagando como pueda.</label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input validate-question" type="radio" name="q2-step5"
+                                   id="q2b-step5" value="correcto" />
+                              <label class="form-check-label text-muted" for="q2b-step5">Buscar un banco que se adapte a
+                                   la forma en que puedo pagar.</label>
+                         </div>
+                    </div>
+
+                    <!-- Botón verificar -->
+                    <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                         <button id="btn-step-5.2" class="btn cb-orimary-btn-pink validar-btn" data-step="5.2" disabled>
+                              Verificar respuestas
+                         </button>
+                    </div>
+               </div>
+
+
+               <div id="step-5.2-correcto" class="step-content d-none text-center">
+                    <div class="container">
+                         <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+                              <!-- Imagen -->
+                              <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                                   <img src="assets/resources/respuestas-correctas-1.jpg" alt="Curso financiero"
+                                        class="img-fluid rounded-6">
+                              </div>
+
+                              <!-- Texto + botón -->
+                              <div class="col-lg-6 ps-24">
+                                   <h2 class="text-start mb-3">¡Felicidades!</h1>
+                                        <p class="text-start text-primary-1 mb-4">
+                                             Tus respuesta fueron correctas. Avanza a la siguiente lección.
+                                        </p>
+
+
+                                        <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                                             <button class="btn cb-orimary-btn-pink avanzar-btn"
+                                                  data-next="step-6.1">Avanzar</button>
+                                        </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div id="step-5.2-reintentar" class="step-content d-none text-center">
+                    <div class="container">
+                         <div class="row align-items-center flex-column-reverse flex-lg-row">
+
+                              <!-- Imagen -->
+                              <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                                   <img src="assets/resources/respuestas-incorrectas.jpg" alt="Curso financiero"
+                                        class="img-fluid rounded-6">
+                              </div>
+
+                              <!-- Texto + botón -->
+                              <div class="col-lg-6 ps-24">
+                                   <h2 class="text-start mb-3">Algunas de tus respuestas son incorrectas</h1>
+                                        <p class="text-start text-primary-1 mb-4">
+                                             Mira nuevamente el vídeo e intenta realizar nuevamente la prueba.
+                                        </p>
+
+
+                                        <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                                             <button class="btn cb-orimary-btn-pink reiniciar-btn"
+                                                  data-step="5">Intentar nuevamente</button>
+
+                                        </div>
+                              </div>
+                         </div>
+                    </div>
                </div>
           </div>
 
+          <!-- STEP 6 -->
+          <div id="step-6">
+               <div id="step-6.1" class="step-content d-none">
+                    <div class="container">
+                         <div class="row align-items-center">
+          
+                              <!-- Columna del video -->
+                              <div class="col-md-8 mb-4 mb-md-0">
+                                   <div id="videoContainer-3-4" class="position-relative has-thumbnail rounded-4 overflow-hidden"
+                                        style="aspect-ratio: 16 / 9;">
+                                        <img src="assets/resources/basico4.png" alt="Portada del video"
+                                             class="w-100 h-100 object-fit-cover">
+                                        <button class="position-absolute top-50 start-50 translate-middle btn-play play-btn"
+                                             data-target="videoContainer-3-4" data-video="JXuFhyHIcRk"
+                                             data-btnnext="btn-next-3-final" aria-label="Reproducir video"></button>
+                                   </div>
+                              </div>
+          
+                              <!-- Columna derecha -->
+                              <div class="col-md-4">
+                                   <div class="card card-nivel p-3 border-0 shadow mb-5">
+                                        <div class="row align-items-center justify-content-center align-items-start">
+                                             <div class="col-md-2 col-2 d-flex align-items-start">
+                                                  <img src="assets/resources/basico.png" alt="Nivel básico" width="48">
+                                             </div>
+                                             <div class="col-md-10 col-10">
+                                                  <p class="mb-1 d-flex align-items-center text-card-level">
+                                                       Nivel: Básico
+                                                       <img src="assets/resources/star.png" alt="Estrella" width="14"
+                                                            class="ms-2">
+                                                  </p>
+                                                  <div class="d-flex align-items-center">
+                                                       <p class="mb-0 text-muted small me-2">Lección 4 de 4</p>
+                                                       <div class="progress flex-grow-1"
+                                                            style="height: 6px; border-radius: 10px;">
+                                                            <div class="progress-bar mini-progress"
+                                                                 style="width: 100%; border-radius: 10px;"></div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+          
+                                   <!-- Contenido Lección -->
+                                   <h4 class="fw-bold text-rosa mb-3">Capacidad de pago</h4>
+                                   <p class="mb-2 text-time" data-time="videoContainer-3-4">Duración: 0:00</p>
+                                   <p>Conoce cuánto crédito puedes solicitar.</p>
+          
+                                   <div class="btn-wrapper text-center mt-4 d-flex justify-content-center">
+                                        <button class="btn cb-orimary-btn-pink avanzar-btn w-100" id="btn-next-3-final"
+                                             data-next="step-3-resumen" disabled>
+                                             Finalizar módulo
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+          
+          
+               </div>
+               <div id="step-6.2" class="step-content d-none">
+                    <h4 class="fw-bold text-rosa mb-2">¡Es hora de poner a prueba lo que aprendiste!</h4>
+                    <p class="mb-4">Responde correctamente las siguientes preguntas:</p>
+                    <hr class="mb-4" />
+          
+                    <!-- Pregunta 1 -->
+                    <div class="mb-4">
+                         <p class="fw-semibold mb-2">¿Cuándo estoy preparada para agarrar el compromiso de un crédito?
+                         </p>
+                         <div class="form-check mb-2">
+                              <input class="form-check-input validate-question" type="radio" name="q1-step6" id="q1a-step6"
+                                   value="correcto">
+                              <label class="form-check-label text-muted" for="q1a-step6">Cuando sé que soy capaz de
+                                   pagarlo.</label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input validate-question" type="radio" name="q1-step6" id="q1b-step6"
+                                   value="incorrecto">
+                              <label class="form-check-label text-muted" for="q1b-step6">Cuando soy mayor de
+                                   edad.</label>
+                         </div>
+                    </div>
+          
+                    <!-- Pregunta 2 -->
+                    <div class="mb-4">
+                         <p class="fw-semibold mb-2">¿Cuánto de mis entradas de dinero, debería ocupar como máximo al
+                              pago de créditos?</p>
+                         <div class="form-check mb-2">
+                              <input class="form-check-input validate-question" type="radio" name="q2-step6" id="q2a-step6"
+                                   value="incorrecto">
+                              <label class="form-check-label text-muted" for="q2a-step6">50 pesos de cada 100
+                                   pesos.</label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input validate-question" type="radio" name="q2-step6" id="q2b-step6"
+                                   value="correcto">
+                              <label class="form-check-label text-muted" for="q2b-step6">30 pesos de cada 100
+                                   pesos.</label>
+                         </div>
+                    </div>
+          
+                    <!-- Botón verificar -->
+                    <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                         <button id="btn-step-6.2" class="btn cb-orimary-btn-pink validar-btn" data-step="6.2" disabled>
+                              Verificar respuestas
+                         </button>
+                    </div>
+               </div>
+          
+               <div id="step-6.2-correcto" class="step-content d-none text-center">
+                    <div class="container">
+                         <div class="row align-items-center flex-column-reverse flex-lg-row">
+          
+                              <!-- Imagen -->
+                              <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                                   <img src="assets/resources/respuestas-correctas-1.jpg" alt="Curso financiero"
+                                        class="img-fluid rounded-6">
+                              </div>
+          
+                              <!-- Texto + botón -->
+                              <div class="col-lg-6 ps-24">
+                                   <h2 class="text-start mb-3">¡Felicidades!</h1>
+                                        <p class="text-start text-primary-1 mb-4">
+                                             Tus respuesta fueron correctas. Avanza a la siguiente lección.
+                                        </p>
+          
+          
+                                        <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                                             <button class="btn cb-orimary-btn-pink avanzar-btn"
+                                                  data-next="step-6.1">Avanzar</button>
+                                        </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          
+               <div id="step-6.2-reintentar" class="step-content d-none text-center">
+                    <div class="container">
+                         <div class="row align-items-center flex-column-reverse flex-lg-row">
+          
+                              <!-- Imagen -->
+                              <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                                   <img src="assets/resources/respuestas-incorrectas.jpg" alt="Curso financiero"
+                                        class="img-fluid rounded-6">
+                              </div>
+          
+                              <!-- Texto + botón -->
+                              <div class="col-lg-6 ps-24">
+                                   <h2 class="text-start mb-3">Algunas de tus respuestas son incorrectas</h1>
+                                        <p class="text-start text-primary-1 mb-4">
+                                             Mira nuevamente el vídeo e intenta realizar nuevamente la prueba.
+                                        </p>
+          
+          
+                                        <div class="btn-wrapper text-center mt-4 d-flex justify-content-start">
+                                             <button class="btn cb-orimary-btn-pink reiniciar-btn" data-step="6">Intentar
+                                                  nuevamente</button>
+          
+                                        </div>
+                              </div>
+                         </div>
+                    </div>
+          
+               </div>
+          
+               <div id="step-6.2-preguntas" class="step-content d-none">
+                    <h4 class="fw-bold text-rosa mb-2">Preguntas finales</h4>
+                    <p class="mb-4">Ahora que has completado el nivel básico, queremos saber qué harías en las siguientes situaciones:</p>
+                    <hr class="mb-4" />
+                  
+                    <!-- Pregunta 1 -->
+                    <div class="mb-4">
+                      <p class="fw-semibold mb-2">Ahora que conozco los préstamos formales e informales, yo:</p>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input q-final" type="radio" name="q1-final" id="q1a-final">
+                        <label class="form-check-label text-muted" for="q1a-final">Prefiero seguir pidiendo a mi familia o amistades.</label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input q-final" type="radio" name="q1-final" id="q1b-final">
+                        <label class="form-check-label text-muted" for="q1b-final">Considero la posibilidad de solicitar un préstamo en un banco.</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input q-final" type="radio" name="q1-final" id="q1c-final">
+                        <label class="form-check-label text-muted" for="q1c-final">Quiero solicitar un préstamo en el banco.</label>
+                      </div>
+                    </div>
+                  
+                    <!-- Pregunta 2 -->
+                    <div class="mb-4">
+                      <p class="fw-semibold mb-2">Considero que las ventajas de un crédito formal son:</p>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input q-final" type="radio" name="q2-final" id="q2a-final">
+                        <label class="form-check-label text-muted" for="q2a-final">Tener certeza de sus características y protección de la CONDUSEF.</label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input q-final" type="radio" name="q2-final" id="q2b-final">
+                        <label class="form-check-label text-muted" for="q2b-final">Que prestan más de lo que podría conseguir con mi familia o amistades.</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input q-final" type="radio" name="q2-final" id="q2c-final">
+                        <label class="form-check-label text-muted" for="q2c-final">No tiene ventajas.</label>
+                      </div>
+                    </div>
+                  
+                    <!-- Opinión -->
+                    <h4 class="fw-bold text-rosa mb-2 mt-5">Queremos saber tu opinión</h4>
+                  
+                    <p class="mb-2">¿Qué calificación le das a este curso?</p>
+                    <div id="star-rating" class="d-flex gap-2 justify-content-center mb-4">
+                      <img src="assets/resources/star-inactive.png" alt="1 estrella" class="star" data-value="1" style="cursor:pointer;" width="32">
+                      <img src="assets/resources/star-inactive.png" alt="2 estrellas" class="star" data-value="2" style="cursor:pointer;" width="32">
+                      <img src="assets/resources/star-inactive.png" alt="3 estrellas" class="star" data-value="3" style="cursor:pointer;" width="32">
+                      <img src="assets/resources/star-inactive.png" alt="4 estrellas" class="star" data-value="4" style="cursor:pointer;" width="32">
+                      <img src="assets/resources/star-inactive.png" alt="5 estrellas" class="star" data-value="5" style="cursor:pointer;" width="32">
+                    </div>
+                  
+                    <p class="mb-2">¿Tienes algún comentario o sugerencia?</p>
+                    <div class="mb-4">
+                      <textarea id="final-comment" class="form-control" rows="5" style="height: 120px;" placeholder="Escribe aquí tu comentario..."></textarea>
+                    </div>
+                  
+                    <!-- Botón enviar -->
+                    <div class="btn-wrapper text-center mt-4 d-flex justify-content-center">
+                      <button class="btn cb-orimary-btn-pink avanzar-btn" data-next="step-6.2-final" id="final-submit-btn" disabled>
+                        Enviar respuestas
+                      </button>
+                    </div>
+                  </div>
+                  
+                  
+          
+               <div id="step-6.2-final" class="step-content d-none text-center">
+          
+               </div>
+          
+          </div>
      </main>
 
-     
 
 
-          
-          <!-- ... modal terminos y condiciones... -->
-          <div id="modalOverlay" class="modal-overlay d-none">
-               <div class="modal-box">
-                    <button id="closeModal" class="btn-close">
-                         <img src="assets/resources/icon-close.png" alt="Cerrar" width="24" height="24">
-                    </button>
 
-                    <h3 class="modal-title mb-4 mt-4">Términos y condiciones</h3>
 
-                    <p class="modal-text">
-                         Banco Compartamos, S.A. Institución de Banca Múltiple y Compartamos Servicios, S.A. de C.V.,
-                         empresas pertenecientes a GENTERA, con domicilio en Insurgentes Sur número 1458 piso 5, Colonia
-                         Actipan, Alcaldía Benito Juárez, C.P. 03230, México, Ciudad de México, utilizará sus datos
-                         personales y uso de imagen requeridos en este formulario para las siguientes finalidades: i)
-                         Identificarlo y corroborar su identidad; ii) Registrar la información y mantener actualizada
-                         nuestra base de datos; iii) Invitarlo a participar o participar en nuestros eventos, campañas,
-                         concursos o sorteos, y en caso de resultar ganador, contactarlo para la entrega del premio.
-                         Para más información acerca del tratamiento y de los derechos que puede hacer valer, usted
-                         puede acceder al Aviso de Privacidad Integral para Clientes a través de <a
-                              href="https://www.gentera.com.mx" class="link-cb" target="_blank">www.gentera.com.mx</a>
-                         en la sección Avisos de Privacidad.
-                    </p>
-               </div>
+     <!-- ... modal terminos y condiciones... -->
+     <div id="modalOverlay" class="modal-overlay d-none">
+          <div class="modal-box">
+               <button id="closeModal" class="btn-close">
+                    <img src="assets/resources/icon-close.png" alt="Cerrar" width="24" height="24">
+               </button>
+
+               <h3 class="modal-title mb-4 mt-4">Términos y condiciones</h3>
+
+               <p class="modal-text">
+                    Banco Compartamos, S.A. Institución de Banca Múltiple y Compartamos Servicios, S.A. de C.V.,
+                    empresas pertenecientes a GENTERA, con domicilio en Insurgentes Sur número 1458 piso 5, Colonia
+                    Actipan, Alcaldía Benito Juárez, C.P. 03230, México, Ciudad de México, utilizará sus datos
+                    personales y uso de imagen requeridos en este formulario para las siguientes finalidades: i)
+                    Identificarlo y corroborar su identidad; ii) Registrar la información y mantener actualizada
+                    nuestra base de datos; iii) Invitarlo a participar o participar en nuestros eventos, campañas,
+                    concursos o sorteos, y en caso de resultar ganador, contactarlo para la entrega del premio.
+                    Para más información acerca del tratamiento y de los derechos que puede hacer valer, usted
+                    puede acceder al Aviso de Privacidad Integral para Clientes a través de <a
+                         href="https://www.gentera.com.mx" class="link-cb" target="_blank">www.gentera.com.mx</a>
+                    en la sección Avisos de Privacidad.
+               </p>
           </div>
+     </div>
 
 
      <footer class="footer mt-auto">
@@ -527,12 +1285,12 @@
      <script src="js/main.js"></script>
      <script src="js/step-bystep.js"></script>
      <script src="js/forms.js"></script>
+     <script src="https://www.youtube.com/iframe_api"></script>
+     <script src="js/videos-script.js"></script>
      <script>
-
-     </script>
-
-
-
+          
+        </script>
+        
 </body>
 
 </html>
