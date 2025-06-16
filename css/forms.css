@@ -86,6 +86,23 @@
      border: 1px solid #bababa;
  }
 
+
+ /* Estilo por defecto */
+ .form-check-input+.form-check-label {
+      font-weight: 400;
+      /* normal */
+      color: #252A2D !important;
+      /* gris tipo text-muted */
+      transition: all 0.2s ease;
+ }
+
+ /* Estilo cuando el radio está seleccionado */
+ .form-check-input:checked+.form-check-label {
+      font-weight: 700;
+      /* bold */
+      color: #CE0058;
+      /* por ejemplo rosa fuerte */
+ }
 /*  clase para que el focus se quite XD 
 input.form-control:focus,
 textarea.form-control:focus,
