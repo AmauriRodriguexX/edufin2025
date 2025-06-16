@@ -202,7 +202,7 @@ p {
 .text-primary-1 {
   color: #252A2D;
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
@@ -721,4 +721,8 @@ body .btn-close:focus {
 
 .cursor-pointer {
      cursor: pointer;
+}
+
+.terminos-color-forms {
+     color: #847770;
 }
