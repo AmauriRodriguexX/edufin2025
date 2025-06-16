@@ -171,8 +171,7 @@ h3 {
 h4 {
   font-family: 'Bree', sans-serif;
   font-weight: 500 !important;
-  font-size: 20px;
-  /* mobile */
+  font-size: 24px;
   color: #CE0058 !important;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -180,7 +179,7 @@ h4 {
 
 @media (min-width: 576px) {
   h4 {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
 
