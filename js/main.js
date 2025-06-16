@@ -94,28 +94,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Modal Avanzado (específico)
-  const cardAvanzado = document.querySelector('.abrir-modal-avanzado');
+  // Modal Avanzado (específico)document.addEventListener("DOMContentLoaded", () => {
   const modalAvanzado = document.getElementById('modalAvanzado');
   const closeModalAvanzado = document.getElementById('closeModalAvanzado');
 
-  cardAvanzado?.addEventListener('click', () => {
-    modalAvanzado?.classList.remove('d-none');
+  // Todas las tarjetas que abren el mismo modal
+  const cardsAvanzado = document.querySelectorAll('.abrir-modal-avanzado');
+
+  cardsAvanzado.forEach(card => {
+    card.addEventListener('click', () => {
+      modalAvanzado?.classList.remove('d-none');
+    });
   });
 
+  // Cerrar modal con el botón
   closeModalAvanzado?.addEventListener('click', () => {
     modalAvanzado?.classList.add('d-none');
   });
 
+  // Cerrar modal si se hace clic fuera del modal-box
   modalAvanzado?.addEventListener('click', (e) => {
     if (e.target === modalAvanzado) {
       modalAvanzado.classList.add('d-none');
     }
   });
-
-  // Función cambio de step reutilizable
-  function changeStep(currentId, nextId) {
-    document.getElementById(currentId)?.classList.add("d-none");
-    document.getElementById(nextId)?.classList.remove("d-none");
-  }
 });
