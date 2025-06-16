@@ -152,6 +152,13 @@ h2 {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 576px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+
 h3 {
   font-family: 'Bree', sans-serif;
   font-weight: 600;
@@ -617,6 +624,8 @@ p {
   width: 90%;
   position: relative;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  max-height: 90vh; /* no más del 90% de la altura de la ventana */
+  overflow-y: auto; /* scroll si el contenido es muy largo */
 }
 
 
