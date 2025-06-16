@@ -709,6 +709,12 @@ body .btn-close:focus {
   margin-left: calc(-50vw + 50%);
   padding: 3rem 0;
 }
+@media (max-width: 768px) {
+  .bg-full-light {
+    all: unset;
+  }
+}
+
 
 .badge-disponible {
      background-color: #FFA300;
