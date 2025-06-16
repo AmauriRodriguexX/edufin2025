@@ -79,33 +79,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // validracion de formulario final de estrelllas
 document.addEventListener("DOMContentLoaded", () => {
-  let rating = 0;
+    let rating = 0;
 
-  const stars = document.querySelectorAll("#star-rating .star");
-  const submitBtn = document.getElementById("final-submit-btn");
+    const stars = document.querySelectorAll("#star-rating .star");
+    const submitBtn = document.getElementById("final-submit-btn");
+    const comment = document.getElementById("final-comment");
 
-  // Manejo de estrellas
-  stars.forEach(star => {
-    star.addEventListener("click", () => {
-      rating = parseInt(star.dataset.value);
-      stars.forEach(s => {
-        s.src = parseInt(s.dataset.value) <= rating
-          ? "assets/resources/star.png"
-          : "assets/resources/star-inactive.png";
+    // Control estrellas
+    stars.forEach(star => {
+      star.addEventListener("click", () => {
+        rating = parseInt(star.dataset.value);
+        stars.forEach(s => {
+          s.src = parseInt(s.dataset.value) <= rating
+            ? "assets/resources/star.png"
+            : "assets/resources/star-inactive.png";
+        });
+        checkFinalValidity();
       });
-      checkFinalValidity();
     });
+
+    // Validar inputs y textarea
+    document.querySelectorAll(".q-final").forEach(el =>
+      el.addEventListener("change", checkFinalValidity)
+    );
+    comment.addEventListener("input", checkFinalValidity);
+
+    function checkFinalValidity() {
+      const q1Checked = document.querySelector('input[name="q1-final"]:checked');
+      const q2Checked = document.querySelector('input[name="q2-final"]:checked');
+      const commentFilled = comment.value.trim().length > 0;
+      const valid = q1Checked && q2Checked && rating > 0 && commentFilled;
+      submitBtn.disabled = !valid;
+    }
   });
-
-  // Validar solo radios y estrellas
-  document.querySelectorAll(".q-final").forEach(el =>
-    el.addEventListener("change", checkFinalValidity)
-  );
-
-  function checkFinalValidity() {
-    const q1Checked = document.querySelector('input[name="q1-final"]:checked');
-    const q2Checked = document.querySelector('input[name="q2-final"]:checked');
-    const valid = q1Checked && q2Checked && rating > 0;
-    submitBtn.disabled = !valid;
-  }
-});

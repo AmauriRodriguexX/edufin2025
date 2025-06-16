@@ -187,6 +187,17 @@ p {
   font-weight: 400;
 }
 
+.text-res {
+  font-size: 18px;
+  font-weight: 500;
+  color: #252A2D;
+     
+}
+
+.bold-text {
+  font-weight: 600;
+  font-size: 18px;
+}
 
 .text-primary-1 {
   color: #252A2D;
@@ -293,16 +304,61 @@ p {
   }
 }
 
-.cb-orimary-btn-pink:hover {
-  background-color: #960048;
-  color: #fff;
+.cb-orimary-btn-pink:hover,
+.cb-orimary-btn-pink:focus,
+.cb-orimary-btn-pink:focus-visible,
+.cb-orimary-btn-pink:active {
+  background-color: #960048 !important;
+  color: #fff !important;
 }
+
 
 .cb-orimary-btn-pink:disabled {
   background-color: #CACCCE;
   color: #847770;
   cursor: not-allowed;
 }
+
+
+.cb-secondary-btn-pink {
+  width: 100%;
+  height: 56px;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: 2px solid #CE0058;
+  border-radius: 28px;
+  color: #CE0058;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 576px) {
+  .cb-secondary-btn-pink {
+    width: 280px;
+  }
+}
+
+/* Estados interactivos: hover, focus, focus-visible y active */
+.cb-secondary-btn-pink:hover,
+.cb-secondary-btn-pink:focus,
+.cb-secondary-btn-pink:focus-visible,
+.cb-secondary-btn-pink:active {
+  color: #960048 !important;
+  border-color: #960048 !important;
+}
+
+
+.cb-secondary-btn-pink:disabled {
+  background-color: transparent;
+  border-color: #CACCCE;
+  color: #847770;
+  cursor: not-allowed;
+}
+
 
 
 .ps-24 {
@@ -379,7 +435,7 @@ p {
 
 .card-option {
   width: 100%;
-  height: 88px;
+  height: 108px;
   border: 1px solid #dee2e6;
   border-radius: 12px;
   display: flex;
@@ -641,4 +697,32 @@ body .btn-close:focus {
 
 .mini-progress {
      background-color: #CE0058;
+}
+
+.bg-full-light {
+  background-color: #FAF9F7 !important; /* o el color claro que uses */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 3rem 0;
+}
+
+.badge-disponible {
+     background-color: #FFA300;
+}
+
+.badge-disponible-green {
+  background-color: #A2D45E;
+}
+
+.badge-disponible-blue {
+  background-color: #0097CE;
+}
+
+.card-disabled {
+  opacity: 0.5;
+  filter: grayscale(50%); /* Opcional: tono apagado */
+}
+
+.cursor-pointer {
+     cursor: pointer;
 }

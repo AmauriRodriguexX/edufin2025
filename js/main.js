@@ -11,22 +11,30 @@ document.addEventListener("DOMContentLoaded", () => {
   // Validar respuestas (solo ejemplo para step-3.2)
   document.querySelectorAll(".validar-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-      const step = btn.dataset.step;
-
-      // Solo ejecutamos lógica personalizada si es step-3.2
-      if (step === "3.2") {
-        const q1 = document.querySelector('input[name="q1"]:checked');
-        const q2 = document.querySelector('input[name="q2"]:checked');
-        const isCorrect = q1?.value === "correcto" && q2?.value === "correcto";
-        changeStep("step-3.2", `step-3.2-${isCorrect ? "correcto" : "reintentar"}`);
-      } else {
-        // lógica genérica para otros pasos futuros
-        const currentId = `step-${step}`;
-        const nextId = `step-${step}-${Math.random() > 0.3 ? "correcto" : "reintentar"}`;
-        changeStep(currentId, nextId);
-      }
+      const step = btn.dataset.step;               // e.g. "3.2"
+      const baseId = `step-${step}`;               // "step-3.2"
+      const correctoId   = `${baseId}-correcto`;   // "step-3.2-correcto"
+      const reintentoId  = `${baseId}-reintentar`; // "step-3.2-reintentar"
+  
+      const container = document.getElementById(baseId);
+      // 1) Recolecta todos los names de las preguntas
+      const names = [...new Set(
+        Array.from(container.querySelectorAll(".validate-question"))
+             .map(inp => inp.name)
+      )];
+  
+      // 2) Para cada pregunta, localiza el radio :checked y comprueba su clase
+      const allCorrect = names.every(name => {
+        const sel = container.querySelector(`input[name="${name}"]:checked`);
+        return sel && sel.classList.contains("correct-answer");
+      });
+  
+      // 3) Avanza al bloque correcto o al de reintento
+      changeStep(baseId, allCorrect ? correctoId : reintentoId);
     });
   });
+  
+  
 
   // Avanzar automático (después de video)
   document.querySelectorAll(".avanzar-btn").forEach(btn => {
@@ -83,3 +91,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+//card button
+document.querySelectorAll('.ir-a-step').forEach(card => {
+  card.addEventListener('click', () => {
+    const nextId = card.dataset.next;
+    if (nextId) {
+      document.querySelectorAll('.step-content').forEach(s => s.classList.add('d-none'));
+      document.getElementById(nextId)?.classList.remove('d-none');
+    }
+  });
+});
+
+
+//Modal Avanzado card
+  document.addEventListener('DOMContentLoaded', () => {
+    const cardAvanzado = document.querySelector('.abrir-modal-avanzado');
+    const modal = document.getElementById('modalAvanzado');
+    const closeModal = document.getElementById('closeModalAvanzado');
+
+    cardAvanzado?.addEventListener('click', () => {
+      modal.classList.remove('d-none');
+    });
+
+    closeModal?.addEventListener('click', () => {
+      modal.classList.add('d-none');
+    });
+
+    // También cerrar si se hace clic fuera de la caja
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('d-none');
+      }
+    });
+  });
+

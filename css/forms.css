@@ -81,6 +81,11 @@
      border-color: #ce0058;
 }
 
+
+.form-control {
+     border: 1px solid #bababa;
+ }
+
 /*  clase para que el focus se quite XD 
 input.form-control:focus,
 textarea.form-control:focus,
