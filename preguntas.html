@@ -286,9 +286,9 @@
                     <!-- Contenido central -->
                     <div class="text-center-left-mobile">
                          <p class="mb-4 text-res">Tu personalidad financiera es:</p>
-                         <h2 class="fw-bold text-rosa mb-3">Cautelosa</h2>
+                         <h2 class="fw-bold text-rosa mb-3">Cautelosas</h2>
                          <p class="mb-4">
-                              Eres una persona talentosa y con ganas de emprender, vas paso a pasito y te <br> gusta
+                              Eres una persona talentosa y con ganas de emprender, vas paso a pasito y te gusta
                               conocer muy bien antes de
                               contratar algún crédito.
                          </p>
@@ -297,7 +297,7 @@
                          </p>
 
                          <!-- Botón iniciar curso -->
-                         <div class="btn-wrapper text-center mt-4 mb-4 d-flex justify-content-center">
+                         <div class="btn-wrapper text-center mt-4  d-flex justify-content-center">
                               <button class="btn cb-orimary-btn-pink avanzar-btn" data-next="step-2.1">
                                    Iniciar curso
                               </button>
@@ -390,6 +390,13 @@
                                         </select>
                                    </div>
                               </div>
+                              <!-- Checkbox de términos -->
+                              <div class="form-check mt-4">
+                                   <input class="form-check-input" type="checkbox" id="checkTerminos">
+                                   <label class="form-check-label" for="checkTerminos">
+                                        He leído y estoy de acuerdo con el Aviso de Privacidad así los <a href="#" class="link-cb" data-target="#modalOverlay">Términos y condiciones</a>.
+                                   </label>
+                              </div>
                          </div>
 
                          <!-- Formulario para no clientes -->
@@ -399,20 +406,19 @@
                                         <label class="form-label">Nombre(s)*</label>
                                         <input type="text" class="form-control custom-input" placeholder="Ej. Luis">
                                    </div>
-
+                         
                                    <div class="col-md-6">
                                         <label class="form-label">Apellidos*</label>
-                                        <input type="text" class="form-control custom-input"
-                                             placeholder="Ej. Díaz Díaz">
+                                        <input type="text" class="form-control custom-input" placeholder="Ej. Díaz Díaz">
                                    </div>
-
+                         
                                    <div class="col-md-6">
                                         <label class="form-label">Teléfono celular*</label>
                                         <input type="tel" class="form-control custom-input tel-input" maxlength="10"
                                              placeholder="Ej. 5512345678">
                                         <small class="feedback"></small>
                                    </div>
-
+                         
                                    <div class="col-md-6">
                                         <label class="form-label">Compañía telefónica*</label>
                                         <select class="form-select custom-input">
@@ -423,16 +429,16 @@
                                         </select>
                                    </div>
                               </div>
+                              <!-- Checkbox de términos -->
+                              <div class="form-check mt-4">
+                                   <input class="form-check-input" type="checkbox" id="checkTerminos">
+                                   <label class="form-check-label" for="checkTerminos">
+                                        He leído y estoy de acuerdo con el Aviso de Privacidad así los <a href="#" class="link-cb" data-target="#noCliente">Términos y condiciones</a>.
+                                   </label>
+                              </div>
                          </div>
 
-                         <!-- Checkbox de términos -->
-                         <div class="form-check mt-4">
-                              <input class="form-check-input" type="checkbox" id="checkTerminos">
-                              <label class="form-check-label" for="checkTerminos">
-                                   He leído y estoy de acuerdo con el Aviso de Privacidad así los <a href="#"
-                                        class="link-cb">Términos y condiciones</a>.
-                              </label>
-                         </div>
+                         
 
                          <!-- Botón continuar -->
                          <div class="btn-wrapper text-center mt-4 d-flex justify-content-center">
@@ -3888,7 +3894,7 @@
 
 
 
-     <!-- ... modal terminos y condiciones... -->
+     <!-- ... modal terminos y condiciones... clientes -->
      <div id="modalOverlay" class="modal-overlay d-none">
           <div class="modal-box">
                <button id="closeModal" class="btn-close">
@@ -3898,20 +3904,50 @@
                <h3 class="modal-title mb-4 mt-4">Términos y condiciones</h3>
 
                <p class="modal-text">
-                    Banco Compartamos, S.A. Institución de Banca Múltiple y Compartamos Servicios, S.A. de C.V.,
-                    empresas pertenecientes a GENTERA, con domicilio en Insurgentes Sur número 1458 piso 5, Colonia
-                    Actipan, Alcaldía Benito Juárez, C.P. 03230, México, Ciudad de México, utilizará sus datos
-                    personales y uso de imagen requeridos en este formulario para las siguientes finalidades: i)
-                    Identificarlo y corroborar su identidad; ii) Registrar la información y mantener actualizada
-                    nuestra base de datos; iii) Invitarlo a participar o participar en nuestros eventos, campañas,
-                    concursos o sorteos, y en caso de resultar ganador, contactarlo para la entrega del premio.
-                    Para más información acerca del tratamiento y de los derechos que puede hacer valer, usted
-                    puede acceder al Aviso de Privacidad Integral para Clientes a través de <a
-                         href="https://www.gentera.com.mx" class="link-cb" target="_blank">www.gentera.com.mx</a>
+                    Banco Compartamos, S.A. Institución de Banca Múltiple y Compartamos Servicios, S.A. de C.V., empresas
+                    pertenecientes a GENTERA, con domicilio en Insurgentes Sur número 1458 piso 5, Colonia Actipan, Alcaldía Benito
+                    Juárez, C.P. 03230, México, Ciudad de México, utilizará sus datos personales y uso de imagen requeridos en este
+                    formulario para las siguientes finalidades: i) Identificarlo y corroborar su identidad; ii) Registrar la
+                    información y mantener actualizada nuestra base de datos; iii) Invitarlo a participar o participar en nuestros
+                    eventos, campañas, concursos o sorteos, y en caso de resultar ganador, contactarlo para la entrega del premio. Para
+                    más información acerca del tratamiento y de los derechos que puede hacer valer, usted puede acceder al Aviso de
+                    Privacidad Integral para Clientes a través <a href="https://www.compartamos.com.mx/compartamos" class="link-cb"
+                         target="_blank">www.gentera.com.mx</a>
                     en la sección Avisos de Privacidad.
                </p>
           </div>
      </div>
+
+
+     <!-- ... modal terminos y condiciones... no clientes-->
+     <div id="noCliente" class="modal-overlay d-none">
+          <div class="modal-box">
+               <button id="closeModal" class="btn-close">
+                    <img src="assets/resources/icon-close.png" alt="Cerrar" width="24" height="24">
+               </button>
+     
+               <h3 class="modal-title mb-4 mt-4">Términos y condiciones</h3>
+     
+               <p class="modal-text">
+                    GENTERA S.A.B. de C.V. y sus subsidiarias (Controladora AT, S.A.P.I. de C.V.; ATERNA Agente de Seguros y
+                    de Fianzas, S.A de C.V.; Banco Compartamos S.A., Institución de Banca Múltiple; Compartamos Servicios,
+                    S.A. de C.V.; Red Yastás, S.A. de C.V.; Fin Útil, S.A. DE C.V. SOFOM E.R.; Talento ConCrédito, S.A. DE
+                    C.V.; Comfu, S.A. DE C.V. y FinCrementar S.A. de C.V.) y Fundación Gentera A.C., con domicilio en
+                    Insurgentes Sur, Núm. 1458 piso 7, Colonia Actipan, Alcalcía Benito Juárez, C.P. 03230, México, Ciudad de
+                    México y piso 5 de la dirección antes referida aplicable para Fundación Gentera A.C., son los
+                    responsables del tratamiento y protección de sus datos personales, categorizados como: i) Identificación
+                    y ii) Contacto, recabados a través de este medio y los utilizará para las siguientes finalidades: i)
+                    Identificarlo y corroborar su identidad e ii) Invitarlo a participar y dar seguimiento a nuestras
+                    actividades que tengan como objetivo promover el desarrollo de las personas a través de proyectos
+                    educativos, sociales, ecológicos y culturales. Para más información acerca del tratamiento de sus datos
+                    personales y la forma en que podrá ejercer sus derechos ARCO, usted puede consultar el Aviso de
+                    Privacidad Integral GENTERA a través del sitio web <a href="https://www.gentera.com.mx" class="link-cb"
+                         target="_blank">www.gentera.com.mx</a>
+                    en la sección Aviso de Privacidad.
+               </p>
+          </div>
+     </div>
+
 
      <!-- Modal Avanzado Bloqueado -->
      <div id="modalAvanzado" class="modal-overlay d-none">
@@ -3949,7 +3985,7 @@
 
                <!-- Copyright -->
                <div class="text-muted small mb-3">
-                    © 2024 Gentera S. A. B.
+                    © 2025 Gentera S. A. B.
                </div>
 
                <!-- Enlaces -->
